@@ -24,7 +24,7 @@ stages:
           mavenPomFile: 'pom.xml'
           mavenOptions: '-Xmx3072m'
           javaHomeOption: 'default'
-          jdkUserInputPath: '/usr/lib/jvm/java-11-openjdk-amd64'
+          #jdkUserInputPath: '/usr/lib/jvm/java-11-openjdk-amd64'
           jdkArchitectureOption: 'x64'
           mavenVersionOption: 'default'
       - task: CopyFiles@2
