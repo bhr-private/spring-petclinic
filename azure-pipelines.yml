@@ -31,11 +31,12 @@ stages:
       - upload: $(Build.ArtifactStagingDirectory)
         artifact: drop
 
+    - jobs:
       - deployment: VMDeploy
         displayName: web
         pool: vs23822_AgentPool
         environment:
-          name: dev
+          name: VMenv
           resourceType: VirtualMachine
         strategy:
           runOnce:
